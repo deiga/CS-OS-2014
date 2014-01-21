@@ -2,6 +2,8 @@
 
 ###1. Interrupts, I/O
 * What is an interrupt? How can the system detect it?
+  * An interrupt is a mechanism by which other modules(I/O, memory) may interrupt the normal sequencing of the processor.
+  * The instruction cycle contains an *interrupt stage*, whichis used to check for and handle interrupts
 * What may cause interrupt/exception? In what situations? What happens in the system then?
 * What is the most common I/O technique used in the modern computers? How does it work?
 
