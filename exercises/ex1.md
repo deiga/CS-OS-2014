@@ -5,7 +5,12 @@
   * An interrupt is a mechanism by which other modules(I/O, memory) may interrupt the normal sequencing of the processor.
   * The instruction cycle contains an *interrupt stage*, whichis used to check for and handle interrupts
 * What may cause interrupt/exception? In what situations? What happens in the system then?
+  * Modules like I/O and memory
+  * When that modules has finished processing and is ready to accept/provide new data
+  * The processor finishes execution of the current instruction
 * What is the most common I/O technique used in the modern computers? How does it work?
+  * The most common I/O technique used in modern computers is DMA
+  * It works by passing all required information to a DMA Module (read/write, address of I/O, starting location of memory and count of words), which then transfers the data to/from memory
 
 ###2. Program execution
 * Sta12 Problem 1.2: The register level program execution of Figure 1.4 (lect01, slide 19) is described in the text using six steps. Expand this register level program execution to show the use of the MAR and MBR.
