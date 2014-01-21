@@ -37,11 +37,18 @@
 ###4. OS overview
 * What is the difference between OS and OS kernel?
 * What is the relationship between multithreading, multicore, and SMP?
+  * *Multithreading is a technique in which a process is divided  into threads that can run concurrently*
+  * *Symmetric Multiprocessing (SMP) refers to a computer hardware architecture and the OS behavioure linked to that design. The OS schedules processes or threads across all the available processors*
+  * *A Multicore computer combines 2 or more processors on a single die.*
+  * *The relationship between these is the intention to make processing faster without worrying about uniprocessor evolution*
 * Explain the difference between a monolithic kernel and a microkernel.
+  * *A large monolithic kernel constitues everything related to the OS and is typically implemented as a singel process, with all elements sharing the same address space*
+  * *A microkernel only implements few essentials functions to the kernel (address spaces, interprocess communication and basic scheduling). All other services are provided by processses, called servers, that operate in user mode*
 * Sta12 Problem 2.2: An I/O-bound problem is one that, if run alone, would spend more time waiting for I/O than using a processor. A processor-bound program is opposite. Suppose a short term scheduling algorithm favors those programs that have used little processor time in the recent past. Explain why this algorithm favors I/O-bound programs and yet does not permanently deny processor time from processor-bound programs.
 
 ###5. Cache
 * In a CPU, cache access time is 500 ns and main memory access time is 2 µs. If a block is found, on average, 90% of the time in cache, what is the average access time?
+  * *0.9 &times; 500 + 0.1 &times; 2500 = 700*
 * Continuing the preceeding a part, but varying the average cache hit ratio, make table with 80%, 85%, 90%, 95% and 99% averages. What can you deduce from the numbers?
 * Sta12 Problem 1.13: A computer has a cache, main memory, and a disk used for virtual memory. If a referenced word is in cache, 20 ns are required to access it. If it is in main memory, but not in * cache, 60 nc are needed to load it into the cache (including the original time to check the cache), and then the reference is started again. If the word is not in main memory, 12 ms are required to fetch it from the disk, followed by 60 ns to copy it to cahce, and then reference is started again. The cache hit ratio is 0.9 and the main memory hit ration is 0.6. What is the average time in ns required to access a referenced word in this system?
 
