@@ -28,7 +28,11 @@
 
 ###3. User mode vs kernel mode
 * What is the difference between kernel and user mode? Explain why having two distinct modes aids in designing an operating system.
+  * *In user mode some parts of the memory are access protected and some instructions may not be executed*
+  * *In kernel mode privileged instructions may be run and protected memory areas may be accessed*
+  * *because chaos would ensue*
 * Which of the following instructions should be allowed to execute only in kernel mode? (a) disable all interrupts, (b) read the time-of-day clock, (c) set the time-of-day clock, (d) change the memory map?
+  * *a and d*
 
 ###4. OS overview
 * What is the difference between OS and OS kernel?
